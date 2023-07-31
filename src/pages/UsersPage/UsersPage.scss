@@ -3,9 +3,6 @@
 .users-page {
 	display: flex;
 	flex-direction: column;
-	background-image: url('../../assets/img/cat-img.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
 	margin-bottom: 2rem;
 
 	&__description {
