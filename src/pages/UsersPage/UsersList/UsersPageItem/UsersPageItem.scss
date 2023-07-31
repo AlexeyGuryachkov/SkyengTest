@@ -1,0 +1,16 @@
+@use '../../../../assets/styles/colors.scss' as *;
+
+.users-item {
+	display: flex;
+	align-items: center;
+	width: 17.8rem;
+	padding: 0.5rem;
+	margin: 0 0.5rem 0.5rem 0;
+	background-color: $color-blue-sky-light;
+	border-radius: 1rem;
+	cursor: pointer;
+
+	.avatar {
+		margin-right: 1rem;
+	}
+}

@@ -1,0 +1,115 @@
+@use '../../assets/styles/colors.scss' as *;
+@use '../../assets/styles/varables.scss' as *;
+
+.pagination {
+	display: flex;
+	align-items: center;
+
+	&-page-wrapper {
+		position: relative;
+	}
+
+	.pagination-button {
+		position: relative;
+		height: 1.1rem;
+		width: 1.1rem;
+		margin: 0 0.5rem;
+		transition: $transition-main;
+		border-radius: 50%;
+		background-color: $color-main-bg;
+		cursor: pointer;
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			left: 7px;
+			top: 3px;
+			width: 2px;
+			height: 7px;
+			transform: rotate(45deg);
+			background-color: #515151;
+		}
+
+		&::before {
+			position: absolute;
+			content: '';
+			left: 7px;
+			bottom: 3px;
+			width: 2px;
+			height: 7px;
+			transform: rotate(-45deg);
+			background-color: #515151;
+		}
+
+		&.next {
+			transform: rotate(180deg);
+		}
+
+		&:hover {
+			background-color: $color-yellow-sky;
+		}
+	}
+
+	.pagination-page {
+		padding: 0.2rem 0.5rem;
+		border-radius: 0.5rem;
+		margin-right: 6px;
+		transition: $transition-main;
+		background-color: $color-main-bg;
+		font-weight: 500;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $color-yellow-sky;
+		}
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 0.5rem;
+			height: 0.5rem;
+			background-color: $color-main-bg;
+			transform: rotate(45deg);
+			bottom: 2rem;
+			left: 0.6rem;
+			transition: $transition-main;
+			opacity: 0;
+		}
+
+		&.active {
+			background-color: rgba($color-main-bg, 0.5);
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&-input {
+		position: absolute;
+		left: 0;
+		opacity: 0;
+		bottom: 2.2rem;
+		margin-right: 6px;
+		width: 3rem;
+		padding: 0.2rem 0.5rem;
+		border-radius: 0.5rem;
+		font-size: 16px;
+		border: none;
+		transition: $transition-main;
+		pointer-events: none;
+
+		&.active {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+	& > p {
+		margin-right: 6px;
+	}
+}

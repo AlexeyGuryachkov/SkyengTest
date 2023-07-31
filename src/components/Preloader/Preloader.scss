@@ -1,0 +1,25 @@
+.preloader-wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(10px);
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	&.show {
+		display: flex;
+	}
+
+	i {
+		backdrop-filter: blur(20px);
+		width: 10rem;
+		height: 10rem;
+		background: no-repeat url('../../assets/img/preloader2.gif');
+		background-size: cover;
+	}
+}

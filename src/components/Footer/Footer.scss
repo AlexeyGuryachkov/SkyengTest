@@ -1,0 +1,19 @@
+@use '../../assets/styles/colors.scss' as *;
+
+.footer {
+	background-color: $color-dark-bg;
+	padding: 2rem;
+	.footer-row {
+		display: flex;
+		align-items: center;
+		color: $color-text-dark;
+		& > p {
+			font-size: 18px;
+			color: $color-text-dark;
+			margin-right: 6px;
+		}
+		& > a {
+			color: $color-yellow-sky;
+		}
+	}
+}

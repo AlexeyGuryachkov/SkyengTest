@@ -1,0 +1,13 @@
+.notifications-wrapper {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1000;
+	bottom: 0;
+	width: 100vw;
+	padding-bottom: 2rem;
+	height: fit-content;
+	pointer-events: none;
+	transition: all ease-in 0.3s;
+}

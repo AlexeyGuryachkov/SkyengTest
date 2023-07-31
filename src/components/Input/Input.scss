@@ -1,0 +1,38 @@
+@use '../../assets/styles/colors.scss' as *;
+@use '../../assets/styles/varables.scss' as *;
+
+.input-wrapper {
+	position: relative;
+	.input {
+		height: fit-content;
+		padding: 0.7rem 1rem;
+		border-radius: 1rem;
+		font-size: 24px;
+		border: none;
+		background-color: $color-main-bg;
+		border: 1px solid $color-main-bg;
+
+		&:focus {
+			border-color: $color-blue-active;
+		}
+
+		&:focus,
+		&:not([value='']) {
+			& + .input-label {
+				top: -1.2rem;
+				font-size: 14px;
+				opacity: 0.7;
+			}
+		}
+	}
+
+	.input-label {
+		position: absolute;
+		top: 0.7rem;
+		left: 1rem;
+		font-size: 24px;
+		opacity: 0.4;
+		pointer-events: none;
+		transition: $transition-main;
+	}
+}

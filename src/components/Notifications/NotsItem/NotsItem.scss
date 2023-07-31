@@ -1,0 +1,18 @@
+@use '../../../assets/styles/colors.scss' as *;
+
+.nots-item {
+	opacity: 0;
+	padding: 1rem 3rem;
+	margin-bottom: -10rem;
+	width: fit-content;
+	text-align: center;
+	transition: all ease-in 0.3s;
+	background-color: $color-yellow-sky;
+	font-weight: 500;
+	border-radius: 1rem;
+}
+
+.nots-item.visible {
+	opacity: 1;
+	margin-bottom: 0;
+}

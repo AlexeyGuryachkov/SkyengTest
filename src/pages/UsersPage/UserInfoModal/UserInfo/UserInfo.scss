@@ -1,0 +1,21 @@
+@use '../../../../assets/styles/colors.scss' as *;
+
+.user-info {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 24px;
+
+	&__stroke {
+		display: flex;
+		& > p {
+			margin-right: 6px;
+			font-weight: 500;
+			color: $color-text-light;
+		}
+		& > a {
+			color: $color-yellow-sky;
+		}
+	}
+}

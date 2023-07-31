@@ -1,0 +1,40 @@
+@use '../../assets/styles/colors.scss' as *;
+
+.users-page {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/img/cat-img.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 2rem;
+
+	&__description {
+		align-self: flex-end;
+		padding: 2rem;
+
+		.title {
+			max-width: 40rem;
+			margin-bottom: 2rem;
+			text-shadow: 0 0 2px #fff;
+		}
+
+		.subtitle {
+			max-width: 50rem;
+			mix-blend-mode: difference;
+			text-shadow: 0 0 2px #fff;
+		}
+	}
+
+	&__body {
+		width: 40rem;
+		height: fit-content;
+		margin: 0 auto;
+		padding: 2rem;
+		border-radius: 1rem;
+		background-color: $color-blue-sky;
+
+		&--plug {
+			padding: 3rem 0;
+		}
+	}
+}

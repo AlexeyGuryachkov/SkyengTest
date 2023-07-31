@@ -1,0 +1,8 @@
+@use '../../../assets/styles/colors.scss' as *;
+
+.user-info-modal {
+	display: flex;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: $color-blue-sky;
+}
